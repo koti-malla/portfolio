@@ -1,9 +1,9 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center text-center p-4 bg-gradient-to-b from-primary/5 to-background">
+    <div id="home" className="min-h-screen flex flex-col justify-center items-center text-center p-4 bg-gradient-to-b from-primary/5 to-background">
       <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-slide-up">
         KOTESWARA RAO
       </h1>
@@ -13,7 +13,7 @@ const Hero = () => {
       <p className="max-w-2xl text-muted-foreground mb-8 animate-slide-up">
         Ambitious Computer Vision Engineer with expertise in AI, deep learning, and industrial automation.
       </p>
-      <div className="flex gap-4 animate-slide-up">
+      <div className="flex flex-wrap gap-4 justify-center items-center mb-8 animate-slide-up">
         <Button variant="outline" size="icon" asChild>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">
             <Github className="h-5 w-5" />
@@ -29,6 +29,15 @@ const Hero = () => {
             <Mail className="h-5 w-5" />
           </a>
         </Button>
+        <Button variant="outline" size="icon" asChild>
+          <a href="tel:+917780509215">
+            <Phone className="h-5 w-5" />
+          </a>
+        </Button>
+      </div>
+      <div className="text-sm text-muted-foreground animate-slide-up">
+        <p>koti067@outlook.com | +91 7780509215</p>
+        <p>Samalkot – 533431</p>
       </div>
     </div>
   );
