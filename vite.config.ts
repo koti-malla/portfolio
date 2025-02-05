@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  // build: {
+  //   outDir: "build" ,// Changed from default 'dist' to 'build'\
+  //   assetsDir: "assets"
+  // },
+  base: "/portfolio/", // Match your GitHub Pages subpath
   plugins: [
     react(),
     mode === 'development' &&
