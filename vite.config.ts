@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => ({
   //   outDir: "build" ,// Changed from default 'dist' to 'build'\
   //   assetsDir: "assets"
   // },
-  base: "/portfolio/", // Match your GitHub Pages subpath
+  base: "/portfolio", // Match your GitHub Pages subpath
   plugins: [
     react(),
     mode === 'development' &&
